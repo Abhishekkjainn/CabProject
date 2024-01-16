@@ -154,6 +154,18 @@ body{
 .normaltext{
     color: black;
 }
+.sloganbutton{
+    transform: translateY(20px);
+    width: 180px;
+    height: 60px;
+    background-color: rgb(105, 141, 251);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+}
 
 @media only screen and (max-width: 800px){
     
@@ -166,6 +178,18 @@ body{
         align-items: center;
         flex-direction: column;
         background-color: #F7F7F7;
+    }
+    .sloganbutton{
+        transform: translateY(15px);
+        width: 150px;
+        height: 45px;
+        background-color: rgb(105, 141, 251);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        color: white;
     }
     .page1back{
         width: 100%;
