@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.Headermain{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+.mainheaderlogo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerlinksdiv{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerbuttondiv{
+    height: 100%;
+    width: 20%;
+    /* background-color: royalblue;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Header links design*/
+.headerlink{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.headerlink:hover{
+    transition: 0.3s;
+    background-color: rgb(121, 154, 255);
+    color: white;
+    /* background: linear-gradient(, rgb(48, 92, 226)); */
+}
+
+/*Header button*/
+.headerbutton{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(105, 141, 251);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+}
+/*header mobile*/
+.headerlinksdivmobile{
+    display: none;
+}
+.headerbuttonmobile{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .headerbutton{
+        display: none;
+    }
+    .headerlink{
+        display: none;
+    }
+    .headerlinksdivmobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        position: absolute;
+        z-index: 90;
+        height: 300px;
+        background-color: white;
+        transform: translateY(-100%);
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .headerlinkmobile:hover{
+        background-color: royalblue;
+        width: 70%;
+        height: 50px;
+        transition: 0.3s;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerbuttonmobile{
+        display: block;
+        position: fixed;
+        z-index: 100;
+    }
+}
+
+/*page1*/
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+.page1back{
+    width: 65%;
+    z-index: 1;
+}
+.slogan{
+    width: 30%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.slogantext{
+    color: grey;
+    font-size: 26px;
+}
+.bluetext{
+    color: royalblue;
+    font-size: 64px;
+    font-weight: 600;
+}
+.normaltext{
+    color: black;
+}
