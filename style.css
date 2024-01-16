@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
+    background-color: #F7F7F7;
 }
 .Headermain{
     width: 100%;
@@ -11,6 +12,8 @@ body{
     align-items: center;
     position: fixed;
     z-index: 100;
+    background-color: #f7f7f756;
+    backdrop-filter: blur(5px);
 }
 .mainheaderlogo{
     height: 100%;
@@ -197,7 +200,7 @@ body{
         transform: translateY(-20%);
     }
     .slogan{
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -223,4 +226,150 @@ body{
     }
     
 
+}
+/*Page1*/
+
+/*Page2*/
+.page2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.page2backimage{
+    width: 70%;
+    height: 100%;
+}
+.page2back{
+    width: 50%;
+    height: 100%;
+    background-image:url('assets/page2back.jpg') ;
+    background-size: cover;
+  
+}
+
+.page2content{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page2head{
+    font-size: 44px;
+    color: royalblue;
+    font-weight: 600;
+}
+.triptypeselectordiv{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.onewaydiv{
+    width: 47%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: royalblue;
+}
+.rounddiv{
+    width: 47%;
+    height: 80%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: royalblue;
+}
+.tripformdiv{
+    width: 80%;
+    height: 400px;
+    background-color:rgb(208, 208, 208) ;
+    border-radius: 40px;
+}
+@media only screen and (max-width: 800px){
+    .page2{
+        height: 120vh;
+        flex-direction: column-reverse;
+
+    }
+    .page2back{
+        width: 100%;
+        height: 50%;
+    }
+ 
+    .page2content{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page2head{
+        margin-top: 20px;
+        font-size: 36px;
+        width: 80%;
+        text-align: center;
+        color: royalblue;
+        font-weight: 600;
+    }
+    .triptypeselectordiv{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 300px;
+        height: 80px;
+        border-radius: 100px;
+        background-color: rgb(233, 233, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .onewaydiv{
+        width: 47%;
+        height: 80%;
+        background-color: white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        color: royalblue;
+    }
+    .rounddiv{
+        width: 47%;
+        height: 80%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        color: royalblue;
+    }
+    .tripformdiv{
+        width: 80%;
+        height: 400px;
+        background-color:rgb(208, 208, 208) ;
+        border-radius: 40px;
+    }
 }
