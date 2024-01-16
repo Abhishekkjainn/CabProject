@@ -1,5 +1,24 @@
 let headercounter = 0;
 let tripbool = false;
+
+// Function to show the loader
+function showLoader() {
+  document.getElementById('mainloader').style.display = 'block';
+}
+
+// Function to hide the loader
+function hideLoader() {
+  document.getElementById('mainloader').style.display = 'none';
+}
+
+// Simulate content loading
+window.addEventListener('load', function () {
+  // Simulate an async operation (e.g., loading content)
+  setTimeout(function () {
+    hideLoader(); // Hide the loader after content is loaded
+  }, 2000); // Adjust the timeout as needed
+});
+
 function headerMobile() {
   if (headercounter % 2 == 0) {
     let headerdiv = document.getElementById('headerlinksdivmobile');
