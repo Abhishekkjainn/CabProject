@@ -117,6 +117,7 @@ body{
         position: fixed;
         z-index: 100;
     }
+
 }
 
 /*page1*/
@@ -155,5 +156,42 @@ body{
 }
 
 @media only screen and (max-width: 800px){
+    
+    
+    .page1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F7F7F7;
+    }
+    .page1back{
+        width: 100%;
+        z-index: 1;
+        transform: translateY(-20%);
+    }
+    .slogan{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+    .slogantext{
+        color: grey;
+        font-size: 18px;
+    }
+    .bluetext{
+        color: royalblue;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .normaltext{
+        color: black;
+    }
+    
 
 }
